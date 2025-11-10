@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" data-theme="light" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker zone</title>
 
     <!-- daisyui + TailwindCSS initialized -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
@@ -144,8 +144,26 @@ est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit molli
     
     <main class=" md:container mx-auto">
       <!-- Featured bike section -->
-       <section>
+       <section class="my-24">
+        <h1 class="text-5xl font-bold text-center mb-12">Featured Bikes in This Year</h1>
 
+        <div class="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+          <!-- first image  -->
+          <div class="">
+            <img src="images/others/feature-bike.png" alt="">
+
+          </div>
+                    <!-- 2nd image  -->
+          <div class="">
+            <img src="images/others/feature-bike.png" alt="">
+
+          </div>
+                    <!--3rd image  -->
+          <div class="">
+            <img src="images/others/feature-bike.png" alt="">
+
+          </div>
+        </div>
        </section>
 
        <!-- Latest Bike Section-->
@@ -207,13 +225,72 @@ est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit molli
          </div>
         </section>
       
+        <!-- Happy clients section  -->
+         <section>
 
+         </section>
+
+         <!-- Frequently asked secetions -->
+          <section class="my-24">
+            <h3 class="text-5xl font-bold text-center mb-12">
+             Frequently Asked <span class="text-bike-primary">Questions</span>
+
+            </h3>
+
+            <div class="hero ">
+  <div class="hero-content flex-col lg:flex-row">
+    <img
+      src="images/others/faq.png"
+      class="max-w-sm rounded-lg shadow-2xl"
+    />
+    <!-- Questions with Accordions -->
+    <div class="space-y-5">
+      <div class="collapse collapse-arrow border border-blue-100">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title font-semibold">What are the most important things I should
+know about riding a bike?</div>
+  <div class="collapse-content text-sm">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </div>
+</div>
+<div class="collapse collapse-arrow border border-blue-100">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">How can I tell if my helmet is old and I need a 
+new one?</div>
+  <div class="collapse-content text-sm">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </div>
+</div>
+<div class="collapse collapse-arrow border border-blue-100">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">My bike has been in storage is it safe to ride?</div>
+  <div class="collapse-content text-sm">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </div>
+</div>
+ 
+<div class="collapse collapse-arrow border border-blue-100">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">What rules should I follow when riding my bike?</div>
+  <div class="collapse-content text-sm">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+          </section>
     </main>
  
 
-    <footer>
-
-    </footer>
+     <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <aside>
+    
+      <a>Download Now</a>
+      <a>License</a>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Get The App</h6>
+    <a class="link link-hover"><img class="w-36" src="images/others/ios.png" alt=""></a>
+    <a class="link link-hover"><img class="w-36" src="images/others/android.png" alt=""></a>
+    
+  </nav>
+     </footer>
 
 </body>
 </html>
